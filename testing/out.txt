@@ -1,0 +1,55 @@
+Written ./s1/tests_pooled.py
+Written ./s2/tests_pooled.py
+Written ./s3/tests_pooled.py
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.8 -- py-1.4.30 -- pytest-2.7.2
+rootdir: /home/alexey/python-2015/git/Python2015/testing/s1, inifile: 
+collected 3 items
+
+s1/tests_pooled.py ...
+
+=========================== 3 passed in 0.01 seconds ===========================
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.8 -- py-1.4.30 -- pytest-2.7.2
+rootdir: /home/alexey/python-2015/git/Python2015/testing/s2, inifile: 
+collected 3 items
+
+s2/tests_pooled.py FFF
+
+=================================== FAILURES ===================================
+__________________________________ test_s1_a ___________________________________
+
+    def test_s1_a():
+>       assert a.a() == 42
+E       assert 43 == 42
+E        +  where 43 = <function a at 0x7f98e5b73230>()
+E        +    where <function a at 0x7f98e5b73230> = a.a
+
+s2/tests_pooled.py:4: AssertionError
+__________________________________ test_s2_a ___________________________________
+
+    def test_s2_a():
+>       assert b.a() == 42
+E       assert 43 == 42
+E        +  where 43 = <function a at 0x7f98e5b73230>()
+E        +    where <function a at 0x7f98e5b73230> = b.a
+
+s2/tests_pooled.py:9: AssertionError
+__________________________________ test_s3_a ___________________________________
+
+    def test_s3_a():
+>       assert a.a() == 42
+E       assert 43 == 42
+E        +  where 43 = <function a at 0x7f98e5b73230>()
+E        +    where <function a at 0x7f98e5b73230> = a.a
+
+s2/tests_pooled.py:14: AssertionError
+=========================== 3 failed in 0.02 seconds ===========================
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.8 -- py-1.4.30 -- pytest-2.7.2
+rootdir: /home/alexey/python-2015/git/Python2015/testing/s3, inifile: 
+collected 3 items
+
+s3/tests_pooled.py ...
+
+=========================== 3 passed in 0.01 seconds ===========================
